@@ -1,12 +1,12 @@
 # 3-Button LED Control with Arduino
 
 ## Project Overview
-This project demonstrates a simple **Arduino circuit with 3 pushbuttons and 3 LEDs**, where each button controls its corresponding LED independently. This project teaches beginners about:
+This project demonstrates a simple **Arduino circuit with 3 pushbuttons and 3 LEDs**, where each button controls its corresponding LED independently. This project helps to understand more about how to:
 
-- Reading digital inputs from buttons  
-- Controlling digital outputs (LEDs)  
-- Using **pull-down resistors** to prevent floating inputs  
-- Wiring circuits on a breadboard  
+- Read digital inputs from buttons  
+- Controll digital outputs (LEDs)  
+- Use **pull-down resistors** to prevent floating inputs  
+- Wire circuits on a breadboard  
 
 ---
 
@@ -23,9 +23,8 @@ This project demonstrates a simple **Arduino circuit with 3 pushbuttons and 3 LE
 
 ## Circuit Diagram
 
-![Breadboard Diagram]()
+![Breadboard Diagram](https://github.com/shouqalhabs/3-Button-LED-Arduino/blob/main/3buttons+3LED-Arduino.png?raw=true)
 
-> Replace the URL above with your actual image file in your repository.  
 
 **LEDs:**
 
@@ -83,3 +82,14 @@ void loop() {
   digitalWrite(ledPin3, (buttonState3 == HIGH) ? HIGH : LOW);
 }
 ```
+## How it Works:
+
+- Each button uses a pull-down resistor to ensure the Arduino reads LOW when the button is not pressed.
+- Pressing the button connects +5V to the Arduino input → pin reads HIGH → LED turns ON.
+- Releasing the button disconnects +5V → pin reads LOW → LED turns OFF.
+
+## Learning Outcomes:
+- Understanding digital inputs and outputs in Arduino.
+- Proper use of pull-down resistors to avoid floating pins.
+- Controlling multiple LEDs independently.
+- Breadboard wiring basics.
